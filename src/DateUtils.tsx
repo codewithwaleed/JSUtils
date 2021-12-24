@@ -6,7 +6,10 @@ import {
   getISOStringDate,
   ifDateInPast,
   durationInDays,
-  getCurrentTimeZoneRegion
+  getCurrentTimeZoneRegion,
+  formatDate,
+  getTime,
+  getDayDependingOnDate
 } from "./date";
 
 export default function DateUtils() {
@@ -35,7 +38,16 @@ export default function DateUtils() {
         Check days duration: <span>{durationInDays(dateStr)}</span>
       </p>
       <p>
-        Get Time Zone Region: <span>{getCurrentTimeZoneRegion(now)}</span>
+        Get Time Zone Region: <span>{getCurrentTimeZoneRegion()}</span>
+      </p>
+      <p>
+        Get formatted Date: <span>{formatDate(now, "dd/MMM/yyyy")}</span>
+      </p>
+      <p>
+        Get formatted Date: <span>{getTime(now)}</span>
+      </p>
+      <p>
+        Get formatted Date: <span>{getDayDependingOnDate("2021-12-12")}</span>
       </p>
     </div>
   );
