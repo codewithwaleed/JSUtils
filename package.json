@@ -1,8 +1,13 @@
 {
-  "name": "datetime-properties",
+  "name": "utils-using-ts",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
+  "keywords": [
+    "utils",
+    "javascript",
+    "typescript",
+    "datetime"
+  ],
   "main": "src/index.tsx",
   "dependencies": {
     "react": "17.0.2",
